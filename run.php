@@ -48,17 +48,6 @@ function verif($otp, $token)
 	}
 function claim($token)
 	{
-	$data = '{"promo_code":"GOFOOD022620A"}';
-	$claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
-	if ($claim['success'] == 1)
-		{
-		return $claim['data']['message'];
-		}
-	  else
-		{
-		return false;
-		}
-	}
 	function login($no)
 	{
 	$nama = nama();
