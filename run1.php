@@ -1,6 +1,4 @@
 <?php
-###Ini Copyright###
-###https://github.com/osyduck/Gojek-Register###
 
 include ("function.php");
 
