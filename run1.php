@@ -75,7 +75,7 @@ function veriflogin($otp, $token)
 	}
 function claim($token)
 	{
-	$data = '{"promo_code":"EBADAHMAKAN"}';
+	$data = '{"promo_code":"PESANGOFOOD0906"}';
 	$claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
 	if ($claim['success'] == 1)
 		{
@@ -86,11 +86,11 @@ function claim($token)
 		return false;
 		}
 	}
-echo "Choose Login or Register? Login = 1 & Register = 2: ";
+echo "Choose Login? Login = 1 : ";
 $type = trim(fgets(STDIN));
 if($type == 2){
 echo "It's Register Way\n";
-echo "Input 62 For ID and 1 For US Phone Number\n";
+echo "Input 62\n";
 echo "Enter Number: ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);
@@ -124,7 +124,7 @@ if ($register == false)
 	}
 }else if($type == 1){
 echo "It's Login Way\n";
-echo "Input 62 For ID and 1 For US Phone Number\n";
+echo "Input 62 \n";
 echo "Enter Number: ";
 $nope = trim(fgets(STDIN));
 $login = login($nope);
